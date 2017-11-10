@@ -15,7 +15,7 @@
     "default_popup": "src/main_popup.html"
   },
   "permissions": [
-    "tabs", "activeTab", "http://*/*", "https://*/*"
+    "tabs", "activeTab", "*://*/*"
   ],
   "content_scripts": [{
     "matches": [ "*://*/*" ],
