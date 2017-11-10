@@ -14,8 +14,12 @@ function do_the_magic(tag_status){
     console.log(tag_status);
     var el = document.getElementById('tag_status');
     if(tag_status){
-        el.innerHTML = "Active";
+        status = "Active";
+        icon = "checked.png";
     }else{
-        el.innerHTML = "Inactive";
+        status = "Inactive";
+        icon = "cross.png"
     }
+    
+    el.innerHTML = "<p><img class='status_icon' src='../assets/img/" + icon + "' />" + status + "</p>";
 }

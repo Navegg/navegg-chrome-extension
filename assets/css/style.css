@@ -5,10 +5,32 @@ body {
 
  h1 {
    font-size: 15px;
+   color: #333;
  }
-
+ 
+ p{
+    font-size: 12px;
+    text-align: center;
+    color: #333;
+ }
  #container {
    align-items: center;
    display: flex;
    justify-content: space-between;
+   padding: 10px;
+   display: table;
+   vertical-align: middle;
+ }
+
+ #tag_status{
+    align-items: center;
+    text-align: center !important;
+    display: table-cell;
+    vertical-align: middle;
+ }
+
+ #tag_status > p > img.status_icon{
+    width: 12px;
+    height: auto;
+    margin-right: 10px;
  }
