@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Navegg",
+  "description": "Navegg plugin for Google Chrome",
+  "version": "0.0.1",
+  
+  "icons" : {
+        "16" : "assets/img/naveggx16.png",
+        "48" : "assets/img/naveggx48.png",
+        "128" : "assets/img/naveggx128.png"
+  },
+  "browser_action": {
+    "default_icon": "assets/img/navegg.png",
+    "default_popup": "src/main_popup.html"
+  },
+  "permissions": [
+    "tabs", "activeTab", "http://*/*", "https://*/*"
+  ],
+  "content_scripts": [{
+    "matches": [ "*://*/*" ],
+    "js": ["navegg-extension.js"],
+    "run_at": "document_end"
+  }],
+  "background" : {
+    "scripts": ["background.js"]
+  }
+}
