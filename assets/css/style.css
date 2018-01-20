@@ -1,11 +1,15 @@
 body {
    margin: 10px;
    white-space: nowrap;
+   width: 600px;
+   background: #fff;
  }
 
  h1 {
    font-size: 15px;
    color: #333;
+   margin-left: 22px;
+   font-family: 'Roboto', sans-serif;
  }
  
  p{
@@ -34,3 +38,7 @@ body {
     height: auto;
     margin-right: 10px;
  }
+
+ body > .row{
+    padding: 10px;
+}
