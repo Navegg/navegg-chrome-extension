@@ -11,9 +11,12 @@ setInterval(function(){
 
 //send message to popup
 chrome.runtime.onMessage.addListener(function(message,sender,sendResponse){
+
   if(already_processed){
     sendResponse(_tag);
   }else{
     sendResponse('waiting');
   }
 });
+
+

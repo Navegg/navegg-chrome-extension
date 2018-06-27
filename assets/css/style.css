@@ -42,3 +42,5 @@ body {
  body > .row{
     padding: 10px;
 }
+
+.el-selection {outline: 1px solid blue;}

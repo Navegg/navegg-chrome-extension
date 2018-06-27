@@ -23,3 +23,5 @@ function do_the_magic(tag_status){
     
     el.innerHTML = "<p><img class='status_icon' src='../assets/img/" + icon + "' />" + status + "</p>";
 }
+
+

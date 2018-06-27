@@ -3,3 +3,5 @@ chrome.tabs.onUpdated.addListener( function (tabId, changeInfo, tab) {
 	chrome.tabs.executeScript( { file: 'tag_getter.js' } );
   }
 });
+
+
